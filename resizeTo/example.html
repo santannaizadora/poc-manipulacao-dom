@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Objeto Window</h1>
+    <h2>Método resizeTo</h2>
+
+    <p>Abre uma nova janela e redimensiona para 300 x 300:</p>
+
+    <button onclick="openWin()">Criar janela</button>
+    <button onclick="resizeWin()">Redimensionar janela</button>
+
+    <script>
+        let myWindow;
+
+        function openWin() {
+            myWindow = window.open("", "", "width=200, height=100");
+        }
+
+        function resizeWin() {
+            myWindow.resizeTo(300, 300);
+        }
+    </script>
+
+</body>
+
+</html>
