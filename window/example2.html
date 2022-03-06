@@ -14,11 +14,11 @@
     <script>
         let myWindow;
 
-        function openWin() {
+        const openWin = () =>{
             myWindow = window.open("", "", "width=200, height=100");
         }
 
-        function resizeWin() {
+        const resizeWin = () => {
             myWindow.resizeTo(300, 300);
         }
     </script>
