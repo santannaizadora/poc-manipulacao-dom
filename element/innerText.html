@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .hidden{
+                display: none;
+            }
+        </style>
+    </head>
+<body>
+    <h1>Objeto Element</h1>
+    <h2>Propriedade innerText</h2>
+
+    <p id="example" onclick="changeInnerText()">Conteúdo <b class="hidden">texto</b> interno </p>
+
+    <script>
+        console.log(document.getElementById("example").innerText)
+        const changeInnerText =() => {
+            document.getElementById("example").innerText = "Conteúdo diferente!";
+            console.log(document.getElementById("example").innerText)
+        }
+    </script>
+
+</body>
+
+</html>

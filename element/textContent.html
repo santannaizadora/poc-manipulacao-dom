@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <h1>Objeto Element</h1>
+    <h2>Propriedade textContent</h2>
+
+    <ul id="myList">
+        <li class="hidden">Café</li>
+        <li>chá</li>
+    </ul>
+
+    <p>O textContent do elemento ul é:</p>
+    <p id="demo"></p>
+
+    <script>
+        console.log(document.getElementById("myList").textContent)
+        let text = document.getElementById("myList").textContent;
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

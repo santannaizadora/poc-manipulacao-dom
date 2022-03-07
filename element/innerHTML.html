@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Objeto Element</h1>
+    <h2>Propriedade innerHTML</h2>
+
+    <p id="example" onclick="changeInnerHtml()">Conteúdo <b>HTML</b> interno</p>
+
+    <script>
+        console.log(document.getElementById("example").innerHTML)
+        const changeInnerHtml =() => {
+            document.getElementById("example").innerHTML = "Conteúdo diferente!";
+            console.log(document.getElementById("example").innerHTML)
+        }
+    </script>
+
+</body>
+
+</html>
