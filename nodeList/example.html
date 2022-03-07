@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Objeto document</h1>
+    <h2>Metodo querySelectorAll()</h2>
+
+    <h2 class="example">Um título</h2>
+    <p class="example">Um parágrafo</p>
+
+    <script>
+        const nodeList = document.querySelectorAll(".example");
+        console.log(nodeList)
+        const nodeArray = Array.from(nodeList)
+        console.log(nodeArray)
+    </script>
+
+</body>
+
+</html>
